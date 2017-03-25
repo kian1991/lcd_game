@@ -57,10 +57,11 @@ class spawner(threading.Thread):
                                 lc.cursor_pos = (x, i)
                                 lc.write_string(chr(1))
                                 time.sleep(level[gp.current])##Speed of enemys depends on current level
-				if i == -1:
+				if i == 0:
 					if gp.positon == (x, i):##check collidsion
 						sys.exit()
 					else:##delete enemy
+                                                lc.cursor_pos = (x, i)
 						lc.write_string(' ')
                         else:
                                 self.stop()
