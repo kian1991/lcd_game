@@ -19,18 +19,18 @@ class player:
                 lcd.write_string(chr(0))
 
         def move(self):
-                if self.position == up:
-                        lcd.cursor_pos = up
+                if self.position == gp.up:
+                        lcd.cursor_pos = gp.up
                         lcd.write_string(" ")
-                        lcd.cursor_pos = dwn
+                        lcd.cursor_pos = gp.dwn
                         lcd.write_string(chr(0))
-                        self.position = dwn
-                elif self.position == dwn:
-                        lcd.cursor_pos = dwn
+                        self.position = gp.dwn
+                elif self.position == gp.dwn:
+                        lcd.cursor_pos = gp.dwn
                         lcd.write_string(" ")
-                        lcd.cursor_pos = up
+                        lcd.cursor_pos = gp.up
                         lcd.write_string(chr(0))
-                        self.position = up        
+                        self.position = gp.up        
         
 	
 		
