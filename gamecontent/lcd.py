@@ -30,9 +30,9 @@ player = (
 GPIO.setmode(GPIO.BCM)
 lcd = CharLCD(cols=16, rows=2,
                 pin_rw=None,
-                pin_rs=17,
-                pin_e=18,
-                pins_data=[27,22,23,24],
+                pin_rs=21,
+                pin_e=20,
+                pins_data=[26,19,13,6],
                 numbering_mode=GPIO.BCM)
 
 def init():

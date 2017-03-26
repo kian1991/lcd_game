@@ -9,7 +9,7 @@ import gamecontent.lcd as lcd
 
 
 if __name__ == '__main__':
-	button = 7
+	button = 16
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(button, GPIO.IN)
 
