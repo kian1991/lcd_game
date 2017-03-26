@@ -9,8 +9,6 @@ import gamecontent.lcd as lcd
 
 
 if __name__ == '__main__':
-	# Initialize display. All values have default values and are therefore
-	# optional.
 	button = 7
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(button, GPIO.IN)
